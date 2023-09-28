@@ -1,0 +1,53 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName javang
+    blueprints []
+    buildTool maven
+    cacheProvider redis
+    clientFramework vue
+    clientPackageManager npm
+    clientTheme PrimeFaces
+    creationTimestamp 1695897553281
+    databaseType mongodb
+    devDatabaseType *
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    gradleEnterpriseHost ""
+    jhiPrefix jhi
+    jwtSecretKey "+DYznuoUtve7GyJGQ7OHKJwRBtYRC99NmRMmd7yHMi187FMBjHpc63MGxTuS9slbj7uqcj73FMPoWOKvBmZ1C8fskbOClLi1ZqjoJfXuWF1hyi6g7gDR2doFOdMAO2Yznnq1k0v/ECa4edgiyblW8QtQ3cJOszzctqR59nbeeA=="
+    languages [en, my]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.javang
+    prodDatabaseType mongodb
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities Apple
+}
+
+entity Apple {
+  name String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
